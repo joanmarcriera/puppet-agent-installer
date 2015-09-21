@@ -282,6 +282,15 @@ fi
 [ $debug -eq 1 ] && shootProfile debug || shootProfile 
 setUpInstallPkg
 installPkg puppet
+#is puppet already installed now ?
+if which puppet > /dev/null 2>&1; then
+	echo "Puppet has been installed."
+else
+	echo "Puppet has bnot been installed. Quiting."
+	exit 0
+fi
+
+
 finishInstallPkg
 
 #puppet agent --test &

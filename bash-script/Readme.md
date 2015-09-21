@@ -4,5 +4,5 @@ https://raw.githubusercontent.com/joanmarcriera/puppet-agent-installer/master/ba
 
 * copy & paste
 
-FILE=puppet_installer.sh && cd /tmp/ && wget https://raw.githubusercontent.com/joanmarcriera/puppet-agent-installer/master/bash-script/$FILE && chmod u+x $FILE && ./$FILE
+FILE=puppet_installer.sh && cd /tmp/ && wget https://raw.githubusercontent.com/joanmarcriera/puppet-agent-installer/master/bash-script/$FILE --no-check-certificate && chmod u+x $FILE && ./$FILE
 
